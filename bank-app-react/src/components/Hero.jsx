@@ -1,6 +1,7 @@
 import React from "react";
 import styles from '../style';
 import { discount, robot } from '../assets';
+import GetSterted from './GetStarted';
 
 const Hero = () => {
     return (
@@ -20,6 +21,10 @@ const Hero = () => {
                         <span className="text-gradient"> Generation </span> {" "}
                         Payment Method.
                     </h1>
+                    <div className="ss:flex hidden md:mr-4 mr-0">
+                        <GetSterted />
+                    </div>
+
                 </div>
             </div>
         </section>
