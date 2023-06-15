@@ -3,6 +3,14 @@ import { features } from '../constants';
 import styles, { layout } from '../style';
 import Button from './Button';
 
+const FeatureCard = () => (
+    <div>
+        
+    </div>
+)
+
+
+
 const Business = () => {
     return (
         <section id="fetures" className={layout.section}>
@@ -14,6 +22,11 @@ const Business = () => {
                     With the right credit card, you can improve your financial life by building credit, earning rewards and saving money. But with hundreds of credit cards on the market.
                 </p>
                 <Button styles= "mt-10"/>
+            </div>
+            <div className={`${layout.sectionImg} flex-col`}>
+                {features.map((feature, index) => (
+                    <FeatureCard />
+                ))}
             </div>
         </section>
     )
